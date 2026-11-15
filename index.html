@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Freelancer - Start Bootstrap Theme</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!--Get the stocks from google sheet-->
+        <script src="js/stock.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+         <link rel="stylesheet" href="css/icomoon.css">
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">Boutique YorshInGame</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Nos jeux</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Qui sommes nous ?</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#achat">Modalités d'achat</a></li>
+                       <!-- <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>-->
+                       <!--   <button class="btn btn-xl btn-outline-light btn-panier" type="submit">
+                             <span class="icon palette0"></span>
+                            Panier
+                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                        </button>-->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+                <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />
+                <!-- Masthead Heading-->
+                <!--<h1 class="masthead-heading text-uppercase mb-0">Start Bootstrap</h1>-->
+                  <img class="mb-5" src="assets/img/brand/YorshInGameLogo_White_1024.png" alt="..." />
+                <!-- Icon Divider-->
+                <!--  <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><img class="minilogo" src="assets/img/brand/MonsterE_Dark_128.png"/></div>
+                    <div class="divider-custom-line"></div>
+                </div>-->
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-light mb-0">Auto-éditeur de jeux de société simples et originaux</p>
+            </div>
+        </header>
+        <!-- Portfolio Section-->
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Nos jeux</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><img class="minilogo" src="assets/img/brand/MonsterE_Dark_128.png"/></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#modalJesetou">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/games/JesetouCapsule_Square.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/games/CarremotCapsule.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 3-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/games/circus.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 4-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/games/game.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 5-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/games/safe.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 6-->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/games/submarine.png" alt="..." />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section-->
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">Qui sommes nous ?</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><img class="minilogo" src="assets/img/brand/MonsterE_Dark_128.png"/></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="row">
+                    <div class="col-lg-4 ms-auto"><p class="lead justify">Développeurs de jeux vidéo de profession, nous avons créé de multiples jeux de société pour le fun au cours des années. C'était dommage de les laisser ces prototypes traîner dans un placard, nous avons donc décidé de les fabriquer à petite échelle pour tenter de les partager à d'autres joueurs.</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead justify">Afin de réduire les coûts de production, il aurait fallu nous concentrer sur un seul jeu. Nous avons préféré créer notre propre petit catalogue diversifié. Notre but est de proposer ces jeux dans nos villes ou à proximité, car fondamentalement nous préférons parler à nos joueurs en face plutôt que nous égosiller sur les réseaux sociaux.</p></div>
+                </div>
+                <!-- About Section Button-->
+                <div class="text-center mt-4">
+                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
+                        <span class="icon palette0 me-2 ">ﯶ</span>
+                        Retrouvez nos jeux vidéo sur Steam!
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Achat Section-->
+        <section class="page-section mb-0" id="achat">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Modalités d'achat</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><img class="minilogo" src="assets/img/brand/MonsterE_Dark_128.png"/></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="row">
+                    <div class="col-lg-8 ms-auto  me-auto"><p class="lead justify">Vous trouverez un lien de paiement (incluant les frais de port) en bas des pages de présentation de chacun des jeux. Une fois la commande passée, nous vous enverrons le jeu par lettre verte de la Poste.</p></div>
+                    <div class="col-lg-8 ms-auto  me-auto"><p class="lead justify">Si vous souhaitez acquérir plusieurs jeux d'un coup et économiser des frais de port, contactez-nous via l'adresse email en bas de page. Nous vous enverrons un lien de paiement personnalisé.</p></div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Email</h4>
+                        <p class="lead mb-0">
+                            yorsh.gdev@gmail.com
+                        </p>
+                    </div>
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Des questions, des commentaires ? Rejoignez notre Discord !</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://discord.gg/HTwAP5R3Y"><span class="icon palette0"></span></a>
+
+                    </div>
+                    <!-- Footer About Text-->
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4">Nous rencontrer</h4>
+                        <p class="lead mb-0 justify">
+                            Nous présentons nos jeux réguliérement sur des événements de jeux de société ou des événements municipaux en région parisienne.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Copyright Section-->
+        <!--  <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Copyright &copy; Your Website 2023</small></div>
+        </div>-->
+        <!-- Portfolio Modals-->
+        <!-- Portfolio Modal 1-->
+        <div class="portfolio-modal modal fade" id="modalJesetou" tabindex="-1" aria-labelledby="modalJesetou" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <!--<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Jesétou</h2>-->
+                                    <img class="img-fluid mb-4" src="assets/img/games/JesetouLogo_Black.png" alt="..." width="80%"/>
+                                    <p class="mb-0 gameHook">Jesétou est un jeu de culture général ou il ne faut pas répondre aux questions. Annoncez simplement que vous connaissez évidement la réponse. Les autres vous croiront-ils, ou bien vous mettrons t-ils à l'épreuve ?</p>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><img class="minilogo" src="assets/img/brand/MonsterE_Dark_128.png"/></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <div class="gameFeatures">
+                                        <ul>
+                                            <li>Quiz de culture générale</li>
+                                            <li>A partir de 12 ans</li>
+                                            <li>A partir de 2 joueurs</li>
+                                            <li>Idéal pour l'apéro</li>
+                                        </ul>
+                                    </div>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/games/JesetouCapsule_Square.png" alt="..." />
+                                    <i><p><b id="jesetouCount">X</b> examplaires disponibles.</p></i>
+                                    <!-- Bouton panier-->
+                                    <script  async
+                                      src="https://js.stripe.com/v3/buy-button.js">
+                                    </script>
+
+                                    <stripe-buy-button id="jesetouBuy"
+                                      buy-button-id="buy_btn_1Uc6DLEGSgGmgnABaZ6J4qMp"
+                                      publishable-key="pk_test_51UbHEFEGSgGmgnAB3YOPq03AmW7iqmZ2KxMxwc05Pbv9TH4NKS2wfwDaJsOiFImhQaOyXSKLKrWBoTSjufmkqViw00ZFz5L0qj"
+                                    >
+                                    </stripe-buy-button>
+                                    
+                                    <script async>
+                                        fetch(url)
+                                        .then(response => response.text())
+                                        //.then(data => document.getElementById("jesetouCount").innerHTML=grabCell(data, "Jesétou")
+                                        .then(data =>{
+                                            var count = grabCell(data, "Jesétou");
+                                            document.getElementById("jesetouCount").innerHTML=count;
+                                            if(count<=0)
+                                                  document.getElementById("jesetouBuy").style.display="none";
+                                        }
+                                        );
+                                     </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
