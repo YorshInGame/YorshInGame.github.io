@@ -15,15 +15,15 @@
 //Fonts
 @font-face {
     font-family: 'Nunito';
-    src: url('fonts/Nunito-ExtraLight.woff2') format('woff2');
+    src: url('../fonts/Nunito-ExtraLight.woff2') format('woff2');
     font-weight: 200;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Grandstander';
-    src: url('fonts/Grandstander-Thin.woff2') format('woff2');
-    font-weight: 100;
+    src: url('../fonts/Grandstander-Thin.woff2') format('woff2');
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
@@ -134,7 +134,6 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-family: "Grandstander", "Nunito", -apple-system, BlinkMacSystemFont, "Lato", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
   line-height: 1.2;
 }
 
@@ -267,7 +266,6 @@ sup {
 
 a {
   color: var(--bs-link-color);
-  text-decoration: underline;
 }
 a:hover {
   color: var(--bs-link-hover-color);
@@ -3153,7 +3151,6 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: transparent;
   --bs-btn-box-shadow: none;
   --bs-btn-focus-shadow-rgb: 60, 198, 171;
-  text-decoration: underline;
 }
 .btn-link:focus-visible {
   color: var(--bs-btn-color);

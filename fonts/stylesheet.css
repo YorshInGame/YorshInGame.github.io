@@ -7,9 +7,9 @@
 }
 
 @font-face {
-    font-family: 'Boogaloo';
-    src: url('Boogaloo-Regular.woff2') format('woff2');
-    font-weight: normal;
+    font-family: 'Grandstander';
+    src: url('Grandstander-Thin.woff2') format('woff2');
+    font-weight: 100;
     font-style: normal;
     font-display: swap;
 }
