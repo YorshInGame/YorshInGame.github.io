@@ -85,7 +85,7 @@
                     </div>
                     <!-- Portfolio Item 2-->
                     <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#modalCarremot">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
@@ -94,11 +94,11 @@
                     </div>
                     <!-- Portfolio Item 3-->
                     <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#modalBrisDeMots">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/games/circus.png" alt="..." />
+                            <img class="img-fluid" src="assets/img/games/BrisDeMotsCapsule.jpg" alt="..." />
                         </div>
                     </div>
                     <!-- Portfolio Item 4-->
@@ -206,7 +206,7 @@
             <div class="container"><small>Copyright &copy; Your Website 2023</small></div>
         </div>-->
         <!-- Portfolio Modals-->
-        <!-- Portfolio Modal 1-->
+        <!-- Modal Jesétou-->
         <div class="portfolio-modal modal fade" id="modalJesetou" tabindex="-1" aria-labelledby="modalJesetou" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -234,6 +234,126 @@
                                         </ul>
                                     </div>
                                     <img class="img-fluid rounded mb-5" src="assets/img/games/JesetouCapsule_Square.png" alt="..." />
+                                    <i><p><b id="jesetouCount">X</b> examplaires disponibles.</p></i>
+                                    <!-- Bouton panier-->
+                                    <script  async
+                                      src="https://js.stripe.com/v3/buy-button.js">
+                                    </script>
+
+                                    <stripe-buy-button id="jesetouBuy"
+                                      buy-button-id="buy_btn_1Uc6DLEGSgGmgnABaZ6J4qMp"
+                                      publishable-key="pk_test_51UbHEFEGSgGmgnAB3YOPq03AmW7iqmZ2KxMxwc05Pbv9TH4NKS2wfwDaJsOiFImhQaOyXSKLKrWBoTSjufmkqViw00ZFz5L0qj"
+                                    >
+                                    </stripe-buy-button>
+                                    
+                                    <script async>
+                                        fetch(url)
+                                        .then(response => response.text())
+                                        //.then(data => document.getElementById("jesetouCount").innerHTML=grabCell(data, "Jesétou")
+                                        .then(data =>{
+                                            var count = grabCell(data, "Jesétou");
+                                            document.getElementById("jesetouCount").innerHTML=count;
+                                            if(count<=0)
+                                                  document.getElementById("jesetouBuy").style.display="none";
+                                        }
+                                        );
+                                     </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Modal Carrémot-->
+        <div class="portfolio-modal modal fade" id="modalCarremot" tabindex="-1" aria-labelledby="modalCarremot" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <!--<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Jesétou</h2>-->
+                                    <img class="img-fluid mb-4" src="assets/img/games/CarremotLogo.png" alt="..." width="80%"/>
+                                    <p class="mb-0 gameHook">Carrémot est un jeu de lettre avec une utilisation unique de son plateau de jeu. Placez des mots pour avancer sur le plateau, et soyez le premier joueur à atteindre l'objectif. Il ne suffira pas de poser des mots alembiqués, il faudra aussi tenter de bloquer le chemin de l'adversaire tout en progressant vers la victoire.</p>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><img class="minilogo" src="assets/img/brand/MonsterE_Dark_128.png"/></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <div class="gameFeatures">
+                                        <ul>
+                                            <li>Jeu de lettre</li>
+                                            <li>A partir de 10 ans</li>
+                                            <li>2 joueurs</li>
+                                            <li>Idéal au coin du jeu</li>
+                                        </ul>
+                                    </div>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/games/CarremotCapsule.png" alt="..." />
+                                    <i><p><b id="jesetouCount">X</b> examplaires disponibles.</p></i>
+                                    <!-- Bouton panier-->
+                                    <script  async
+                                      src="https://js.stripe.com/v3/buy-button.js">
+                                    </script>
+
+                                    <stripe-buy-button id="jesetouBuy"
+                                      buy-button-id="buy_btn_1Uc6DLEGSgGmgnABaZ6J4qMp"
+                                      publishable-key="pk_test_51UbHEFEGSgGmgnAB3YOPq03AmW7iqmZ2KxMxwc05Pbv9TH4NKS2wfwDaJsOiFImhQaOyXSKLKrWBoTSjufmkqViw00ZFz5L0qj"
+                                    >
+                                    </stripe-buy-button>
+                                    
+                                    <script async>
+                                        fetch(url)
+                                        .then(response => response.text())
+                                        //.then(data => document.getElementById("jesetouCount").innerHTML=grabCell(data, "Jesétou")
+                                        .then(data =>{
+                                            var count = grabCell(data, "Jesétou");
+                                            document.getElementById("jesetouCount").innerHTML=count;
+                                            if(count<=0)
+                                                  document.getElementById("jesetouBuy").style.display="none";
+                                        }
+                                        );
+                                     </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Modal Bris de mots-->
+        <div class="portfolio-modal modal fade" id="modalBrisDeMots" tabindex="-1" aria-labelledby="modalBrisDeMots" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <!--<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Jesétou</h2>-->
+                                    <img class="img-fluid mb-4" src="assets/img/games/BrisDeMotsCapsule.jpg" alt="..." width="80%"/>
+                                    <p class="mb-0 gameHook">Carrémot est un jeu de lettre avec une utilisation unique de son plateau de jeu. Placez des mots pour avancer sur le plateau, et soyez le premier joueur à atteindre l'objectif. Il ne suffira pas de poser des mots alembiqués, il faudra aussi tenter de bloquer le chemin de l'adversaire tout en progressant vers la victoire.</p>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><img class="minilogo" src="assets/img/brand/MonsterE_Dark_128.png"/></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <div class="gameFeatures">
+                                        <ul>
+                                            <li>Jeu de lettre</li>
+                                            <li>A partir de 10 ans</li>
+                                            <li>A partir de 2 joueurs</li>
+                                            <li>Idéal à l'apéro</li>
+                                        </ul>
+                                    </div>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/games/BrisDeMotsCapsule.jpg" alt="..." />
                                     <i><p><b id="jesetouCount">X</b> examplaires disponibles.</p></i>
                                     <!-- Bouton panier-->
                                     <script  async
